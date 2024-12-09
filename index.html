@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+
+    <style>
+        th, td {
+            border: 1px solid black
+        }
+
+        tfoot {
+            background-color: cyan;
+        }
+
+        th {
+            background-color: cornflowerblue;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabela de Valores</h1>
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>Produto</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th>Black Friday</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Produto 1</td>
+                <td>2</td>
+                <td>R$5,00</td>
+                <td rowspan="2">Sim</td>
+            </tr>
+
+            <tr>
+                <td>Produto 2</td>
+                <td>5</td>
+                <td>R$10,00</td>
+                
+            </tr>
+
+            <tr>
+                <td>Produto 3</td>
+                <td>3</td>
+                <td>R$15,00</td>
+                <td>Não</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td>R$30,00</td>
+            </tr>
+        </tfoot> 
+    </table>
+
+    <h2>Tabela com Notas dos Alunos (exercício)</h2>
+    <!-- Tag de TABLE indica tabela -->
+    <table>
+        <!-- Tag de thead, indica cabeçalho. -->
+        <thead>
+            <!-- Tag tr, indica linha. -->
+            <tr>
+                <!-- Tag th, indica coluna. -->
+                <th>Aluno</th>
+                <th>Matemática</th>
+                <th>Português</th>
+                <th>História</th>
+                <th>Geografia</th>
+                <th>Ciências</th>
+            </tr>
+        </thead>
+
+        <!-- Tag tbody, indica o corpo da tabela -->
+        <tbody>
+            <tr>
+                <!-- Tag td, indica as informações dentro do corpo da tabela. -->
+                <td>Alice</td>
+                <td>7,5</td>
+                <td>8,9</td>
+                <td>8</td>
+                <td>8,2</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>Pedro</td>
+                <td>8,5</td>
+                <td>8</td>
+                <td>8,5</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>Ricardo</td>
+                <td>7</td>
+                <td>7,9</td>
+                <td>8</td>
+                <td>8</td>
+                <td>9,5</td>
+            </tr>
+        </tbody>
+
+        <tbody>
+            <tr>
+                <td>Beatriz</td>
+                <td>9</td>
+                <td>8,7</td>
+                <td>8,5</td>
+                <td>8,7</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
